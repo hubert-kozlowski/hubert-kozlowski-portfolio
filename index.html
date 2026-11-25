@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Professional portfolio of Hubert Kozlowski, Immersive Software Engineering student at the University of Limerick.">
-  <meta name="theme-color" content="#05070d">
+  <meta name="theme-color" content="#0c1222">
   <meta property="og:title" content="Hubert Kozlowski · Professional Portfolio">
   <meta property="og:description" content="A professional portfolio documenting growth, evidence and career readiness in software engineering.">
   <meta property="og:type" content="website">
@@ -12,29 +12,17 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Space+Grotesk:wght@500..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=JetBrains+Mono:wght@400..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
 
   <header class="site-header">
     <nav class="nav shell" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="Hubert Kozlowski home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" focusable="false">
-            <path d="M16 3.5 27 9.8v12.4L16 28.5 5 22.2V9.8Z"></path>
-            <path d="M10.5 12.5h11M10.5 19.5h11M16 8v16"></path>
-            <circle cx="16" cy="8" r="1.8"></circle>
-            <circle cx="10.5" cy="12.5" r="1.5"></circle>
-            <circle cx="21.5" cy="12.5" r="1.5"></circle>
-            <circle cx="10.5" cy="19.5" r="1.5"></circle>
-            <circle cx="21.5" cy="19.5" r="1.5"></circle>
-            <circle cx="16" cy="24" r="1.8"></circle>
-          </svg>
-        </span>
+        <span class="brand-mark" aria-hidden="true">HK</span>
         <span>Hubert Kozlowski</span>
       </a>
       <ul class="nav-links" id="nav-links">
@@ -46,109 +34,54 @@
         <li><a href="#development">Development</a></li>
         <li><a href="#next">Next</a></li>
       </ul>
-      <div class="nav-actions">
-        <button class="command-trigger" type="button" aria-haspopup="dialog" aria-controls="command-menu" data-command-open>
-          <span class="command-label-full">Navigate</span>
-          <span class="command-label-short">Index</span>
-          <kbd aria-hidden="true">⌘K</kbd>
-        </button>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-          <span aria-hidden="true"></span>
-          <span class="visually-hidden">Open navigation menu</span>
-        </button>
-      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span aria-hidden="true"></span>
+        <span class="visually-hidden">Open navigation menu</span>
+      </button>
     </nav>
   </header>
 
-  <nav class="module-rail" aria-label="Portfolio sections">
-    <ol>
-      <li><a href="#about" data-module-link="about"><span>01</span><strong>About</strong></a></li>
-      <li><a href="#learn-more" data-module-link="learn-more"><span>02</span><strong>Values</strong></a></li>
-      <li><a href="#others" data-module-link="others"><span>03</span><strong>Lessons</strong></a></li>
-      <li><a href="#industry" data-module-link="industry"><span>04</span><strong>Industry</strong></a></li>
-      <li><a href="#community" data-module-link="community"><span>05</span><strong>Community</strong></a></li>
-      <li><a href="#development" data-module-link="development"><span>06</span><strong>Development</strong></a></li>
-      <li><a href="#next" data-module-link="next"><span>07</span><strong>Next</strong></a></li>
-    </ol>
-  </nav>
-
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="page-title" data-hero>
-      <div class="atlas-stage" aria-hidden="true">
-        <canvas id="atlas-canvas"></canvas>
-        <svg class="atlas-fallback" viewBox="0 0 900 620" focusable="false">
-          <defs>
-            <radialGradient id="fallback-node" cx="50%" cy="50%" r="50%">
-              <stop offset="0" stop-color="#edf4ff"></stop>
-              <stop offset="0.38" stop-color="#67e8f9"></stop>
-              <stop offset="1" stop-color="#67e8f9" stop-opacity="0"></stop>
-            </radialGradient>
-          </defs>
-          <path d="M185 150 365 95 585 145 735 245 642 420 435 505 230 430Z"></path>
-          <path d="M185 150 435 505M365 95 642 420M585 145 230 430M365 95 435 505"></path>
-          <circle cx="185" cy="150" r="34"></circle>
-          <circle cx="365" cy="95" r="34"></circle>
-          <circle cx="585" cy="145" r="34"></circle>
-          <circle cx="735" cy="245" r="34"></circle>
-          <circle cx="642" cy="420" r="34"></circle>
-          <circle cx="435" cy="505" r="34"></circle>
-          <circle cx="230" cy="430" r="34"></circle>
-        </svg>
-      </div>
-
+    <section class="hero" id="top" aria-labelledby="page-title">
       <div class="shell hero-layout">
-        <div class="hero-copy reveal-group">
-          <p class="system-line"><span class="status-dot" aria-hidden="true"></span>Immersive Software Engineering · University of Limerick</p>
-          <h1 id="page-title">Building useful software with reliability, curiosity and community in mind.</h1>
-          <p class="hero-intro">I’m Hubert Kozlowski, a software engineering student focused on full-stack products, quality automation and practical systems that solve real problems for real people.</p>
-          <div class="hero-actions" aria-label="Professional links">
-            <a class="button button-primary" href="https://linkedin.com/in/hkoz" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
-            <a class="button button-secondary" href="assets/Hubert_Kozlowski_CV.pdf" target="_blank" rel="noreferrer">View my CV</a>
-            <a class="button button-quiet" href="mailto:business.kozlowskihubert@gmail.com">Email me</a>
+        <div class="hero-primary">
+          <div class="portrait-wrap">
+            <img class="profile-photo" src="assets/hubert-kozlowski-headshot.jpg" alt="Professional headshot of Hubert Kozlowski" width="400" height="400">
+            <div class="status-chip"><span aria-hidden="true"></span>At UL</div>
+          </div>
+          <div class="hero-copy">
+            <p class="location-pill">Mullingar / Limerick City</p>
+            <h1 id="page-title">Hubert Kozlowski</h1>
+            <p class="hero-role">Immersive Software Engineering student</p>
+            <p class="hero-statement">Building useful software with reliability, curiosity and community in mind.</p>
+            <p class="hero-intro">I’m focused on full-stack products, quality automation and practical systems that solve real problems for real people.</p>
+            <div class="hero-actions" aria-label="Professional links">
+              <a class="button button-primary" href="https://linkedin.com/in/hkoz" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+              <a class="button button-secondary" href="assets/Hubert_Kozlowski_CV.pdf" target="_blank" rel="noreferrer">View my CV</a>
+              <a class="button button-quiet" href="mailto:business.kozlowskihubert@gmail.com">Email me</a>
+            </div>
           </div>
         </div>
 
-        <div class="hero-panel reveal-group">
-          <aside class="identity-console" aria-label="Profile summary">
-            <div class="identity-orbit" aria-hidden="true"></div>
-            <img class="profile-photo" src="assets/hubert-kozlowski-headshot.jpg" alt="Professional headshot of Hubert Kozlowski" width="400" height="400">
-            <div class="identity-readout">
-              <p class="readout-label">Profile summary</p>
-              <h2>Hubert Kozlowski</h2>
-              <dl class="quick-facts">
-                <div>
-                  <dt>Location</dt>
-                  <dd>Mullingar / Limerick City</dd>
-                </div>
-                <div>
-                  <dt>Interests</dt>
-                  <dd>Full-stack engineering, QA automation, DevOps and security</dd>
-                </div>
-                <div>
-                  <dt>Currently</dt>
-                  <dd>BSc/MSc Immersive Software Engineering, University of Limerick</dd>
-                </div>
-              </dl>
+        <aside class="hero-panel" aria-label="Portfolio summary">
+          <p class="panel-code">Careers Lab portfolio</p>
+          <h2>Evidence, reflection and direction</h2>
+          <dl class="quick-facts">
+            <div>
+              <dt>Course</dt>
+              <dd>BSc/MSc Immersive Software Engineering, University of Limerick</dd>
             </div>
-          </aside>
-        </div>
-
-        <nav class="atlas-nav" aria-label="Portfolio section index">
-          <p class="atlas-nav-label">Portfolio index</p>
-          <a href="#about" data-atlas-node="about"><span>01</span>About</a>
-          <a href="#learn-more" data-atlas-node="learn-more"><span>02</span>Values</a>
-          <a href="#others" data-atlas-node="others"><span>03</span>Lessons</a>
-          <a href="#industry" data-atlas-node="industry"><span>04</span>Industry</a>
-          <a href="#community" data-atlas-node="community"><span>05</span>Community</a>
-          <a href="#development" data-atlas-node="development"><span>06</span>Development</a>
-          <a href="#next" data-atlas-node="next"><span>07</span>Next</a>
-        </nav>
+            <div>
+              <dt>Interests</dt>
+              <dd>Full-stack engineering, QA automation, DevOps and security</dd>
+            </div>
+            <div>
+              <dt>Current work</dt>
+              <dd>Building shippr and contributing to Dublin’s technology community</dd>
+            </div>
+          </dl>
+        </aside>
       </div>
-
-      <a class="scroll-cue" href="#about">
-        <span>Scroll to About</span>
-        <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 2v10M3.5 8.5 8 13l4.5-4.5"></path></svg>
-      </a>
     </section>
 
     <section class="module-section" id="about" data-module="about" aria-labelledby="about-title">
@@ -161,7 +94,7 @@
         <div class="module-content prose reveal">
           <p>I have been coding for close to a decade across Java, Python, C, C++ and TypeScript. That long-running curiosity has developed into a practical engineering style: I like understanding a problem properly, building a working version early, then improving it through feedback, testing and iteration.</p>
           <p>My strongest example is <a href="https://study-ise.vercel.app" target="_blank" rel="noreferrer">study-ise.vercel.app</a>, a full-stack study platform I designed and built in TypeScript with Supabase authentication, progress tracking and a leaderboard. It began as a maths study aid and is now used by around 40 classmates. The project matters to me because it turned a personal need into something useful for a wider group.</p>
-          <p>I have also gained startup experience as Co-Founder and CTO of Rianly, where I helped build a unified inbox for construction teams. During a one-week QA Automation internship at NUACOM, I wrote cross-browser Playwright checks for navigation and lead-generation flows. Alongside this, I placed second in the Senior Group at the BT Young Scientist &amp; Technology Exhibition 2024 and was selected as an ECSC Irish National Team candidate in 2025.</p>
+          <p>I have also gained startup experience as Co-Founder and CTO of Rianly, where I helped build a unified communication dashboard for construction teams across WhatsApp, email and SMS. During a one-week QA Automation internship at NUACOM, I wrote cross-browser Playwright checks for navigation and lead-generation flows. Alongside this, I placed second in the Senior Group at the BT Young Scientist &amp; Technology Exhibition 2024 and was selected as an ECSC Irish National Team candidate in 2025.</p>
           <p>I want employers and collaborators to see me as a dependable, curious engineer who cares about quality, communicates clearly and contributes positively to the people around him.</p>
 
           <div class="capability-grid" aria-label="Key skills">
@@ -275,7 +208,7 @@
               <div class="card-meta">Residency panel · Óran Fleming and Ciaran Lynch</div>
               <h3>Choosing between impact and guidance</h3>
               <figure class="evidence-figure">
-                <img src="assets/oran-ciaran-residency-panel.jpg" alt="Óran Fleming and Ciaran Lynch speaking during an ISE Careers Lab session" width="1024" height="593" loading="lazy">
+                <img src="assets/oran-ciaran-residency-panel.jpg" alt="Óran Fleming and Ciaran Lynch speaking during an ISE Careers Lab session" width="1024" height="593">
                 <figcaption>Óran Fleming and Ciaran Lynch discussing their residency experiences.</figcaption>
               </figure>
               <div class="reflection-points">
@@ -302,7 +235,7 @@
               <div class="card-meta">Careers Lab speaker · Gillian Place</div>
               <h3>Career progression is not the same as learning</h3>
               <figure class="evidence-figure">
-                <img src="assets/gillian-place-career-lab.jpg" alt="Gillian Place speaking during an ISE Career Lab session at the University of Limerick" width="1024" height="768" loading="lazy">
+                <img src="assets/gillian-place-career-lab.jpg" alt="Gillian Place speaking during an ISE Career Lab session at the University of Limerick" width="1024" height="768">
                 <figcaption>Gillian Place reflecting on career growth, environment and life changes.</figcaption>
               </figure>
               <div class="reflection-points">
@@ -329,12 +262,12 @@
               <div class="card-meta">Reflection needed · George F. Dierberger</div>
               <h3>George F. Dierberger’s talk</h3>
               <figure class="evidence-figure">
-                <img src="assets/george-dierberger-talk.jpg" alt="Dr George Dierberger presenting How to do Everything right and still fail at the University of Limerick" width="1024" height="637" loading="lazy">
+                <img src="assets/george-dierberger-talk.jpg" alt="Dr George Dierberger presenting How to do Everything right and still fail at the University of Limerick" width="1024" height="637">
                 <figcaption>Dr George Dierberger presenting “How to do Everything right and still fail” on 18 November 2026.</figcaption>
               </figure>
               <p class="placeholder-text">I have evidence of attending George’s talk, but no reliable notes from its content yet. Add three to five bullet points covering the main message, one surprise, one challenged assumption and one action you will take because of it.</p>
-              <details>
-                <summary>Use this reflection structure</summary>
+              <div class="reflection-structure">
+                <h4>Use this reflection structure</h4>
                 <ul>
                   <li>What was George’s main message?</li>
                   <li>What example or story made it concrete?</li>
@@ -342,7 +275,7 @@
                   <li>Which assumption did it challenge?</li>
                   <li>What will you do differently when preparing for your career?</li>
                 </ul>
-              </details>
+              </div>
             </article>
           </div>
         </div>
@@ -397,7 +330,7 @@
           <p class="module-dek">Volunteering, mentoring and building shared technical resources.</p>
         </div>
         <div class="module-content prose reveal">
-          <p>My strongest contribution outside formal coursework has been through technology communities and peer support. As a core event volunteer with Give(a)Go, I help coordinate and run sponsored technology events for Dublin’s builder community. More recently, I joined the core team organising Dublin AI Week. This has developed my organisational awareness because community work is not only enthusiasm; it requires reliability, communication and calm problem-solving when plans change.</p>
+          <p>My strongest contribution outside formal coursework has been through technology communities and peer support. As a core event volunteer with Give(a)Go, I help coordinate and run sponsored technology events for Dublin’s builder community. More recently, I joined the core team organising Dublin AI Week, helping with the opening weekend, builder events and community coordination. This has developed my organisational awareness because community work is not only enthusiasm; it requires reliability, communication and calm problem-solving when plans change.</p>
           <p>I also continue to mentor students at Colaiste Mhuire in Mullingar, running workshops on BT Young Scientist projects and ZeroDays CTF preparation. I benefit personally from explaining ideas clearly, but the larger impact is helping students believe that ambitious technical projects are accessible to them. Having been helped by more experienced people myself, I see mentoring as a practical way to pass that support forward.</p>
           <p>The ISE study website is another form of contribution. What began as a personal study aid became a shared resource used by around 40 classmates. Building and maintaining it taught me that peer impact does not always require a formal role. Sometimes the most useful contribution is noticing a shared problem and building something that makes it smaller.</p>
           <p>These activities have strengthened my confidence, communication and sense of responsibility. They have also changed how I understand professional identity: being a good engineer includes what you enable other people to do, not only what you produce individually.</p>
@@ -436,7 +369,7 @@
                   <p><strong>Situation:</strong> I wanted a better way to organise study materials and track progress across modules.</p>
                   <p><strong>Learning:</strong> I developed practical full-stack skills in TypeScript, authentication, user-specific data, deployment and iterative product design.</p>
                   <p><strong>Application:</strong> I applied these skills by shipping a live platform used by classmates and by thinking more carefully about user journeys and maintainability.</p>
-                  <p><strong>Next step:</strong> improve testing coverage, accessibility auditing and documentation so the platform is easier for others to maintain or extend.</p>
+                  <p><strong>Next step:</strong> improve testing coverage, accessibility auditing and documentation so the platform is easier for others to maintain or extend. I am applying similar product lessons while building shippr, a PR-native project-progress platform for Leaving Cert Computer Science students and teachers.</p>
                 </div>
               </div>
             </article>
@@ -507,7 +440,7 @@
               <div class="goal-date">Target · March 2027</div>
               <h3>Build stronger DevOps and deployment judgment</h3>
               <p><strong>Why it matters:</strong> building Rianly showed me that deployment, rollback and observability are central to trustworthy software.</p>
-              <p><strong>Actions:</strong> build one project with CI, automated tests, health checks, environment separation and a documented rollback path.</p>
+              <p><strong>Actions:</strong> apply CI, automated tests, health checks, environment separation and a documented rollback path to shippr or another production-minded project.</p>
             </article>
             <article class="goal-card reveal">
               <div class="goal-date">Target · May 2027</div>
@@ -574,32 +507,5 @@
     </div>
   </footer>
 
-  <dialog class="command-menu" id="command-menu" aria-labelledby="command-title">
-    <div class="command-shell">
-      <div class="command-header">
-        <div>
-          <p class="module-code">Portfolio navigation</p>
-          <h2 id="command-title">Go to a section</h2>
-        </div>
-        <button class="command-close" type="button" data-command-close aria-label="Close section navigation">×</button>
-      </div>
-      <label class="command-search" for="command-filter">
-        <span>Filter destinations</span>
-        <input id="command-filter" type="search" autocomplete="off" placeholder="Type a section or action">
-      </label>
-      <ul class="command-list" id="command-list">
-        <li><a href="#about" data-command-item><span>01</span><strong>About</strong><small>Identity, skills and career interests</small></a></li>
-        <li><a href="#learn-more" data-command-item><span>02</span><strong>Values</strong><small>Professional identity and working principles</small></a></li>
-        <li><a href="#others" data-command-item><span>03</span><strong>Lessons</strong><small>Learning from speakers and industry voices</small></a></li>
-        <li><a href="#industry" data-command-item><span>04</span><strong>Industry</strong><small>Career Connect and employer engagement</small></a></li>
-        <li><a href="#community" data-command-item><span>05</span><strong>Community</strong><small>Volunteering, mentoring and contribution</small></a></li>
-        <li><a href="#development" data-command-item><span>06</span><strong>Development</strong><small>Evidence of growth this year</small></a></li>
-        <li><a href="#next" data-command-item><span>07</span><strong>Next</strong><small>Goals and resources for the next 12 months</small></a></li>
-        <li><a href="assets/Hubert_Kozlowski_CV.pdf" target="_blank" rel="noreferrer" data-command-item><span>CV</span><strong>Open CV</strong><small>Downloadable PDF copy</small></a></li>
-        <li><a href="https://linkedin.com/in/hkoz" target="_blank" rel="noreferrer" data-command-item><span>LINK</span><strong>Open LinkedIn</strong><small>Professional profile and activity</small></a></li>
-        <li><button type="button" data-command-item data-print-action><span>PDF</span><strong>Print or save as PDF</strong><small>Create the archive copy</small></button></li>
-      </ul>
-    </div>
-  </dialog>
 </body>
 </html>

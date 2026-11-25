@@ -1,6 +1,6 @@
 # Hubert Kozlowski — Professional Portfolio
 
-Static portfolio website for the Immersive Software Engineering Careers Lab assignment. The site uses an original **Career Systems Atlas** design: the seven required portfolio sections are presented as connected engineering modules, with an interactive WebGL system map, keyboard navigation and a print-friendly archive layout.
+Static portfolio website for the Immersive Software Engineering Careers Lab assignment. The design is a wider editorial interpretation of Hubert's personal site: restrained navy surfaces, amber accents, precise typography, evidence-led reflection layouts and a print-friendly archive mode.
 
 ## Run locally
 
@@ -13,23 +13,21 @@ Open `http://localhost:8000`.
 
 ## Architecture
 
-No build step is required.
+No framework or build step is required.
 
-- `index.html` — semantic portfolio content, section structure, command menu and atlas fallback markup
-- `styles.css` — dark visual system, responsive layout, reduced-motion handling and print/PDF styles
-- `script.js` — mobile navigation, active module tracking, scroll progress, reveal states, command menu and print behaviour
-- `atlas.js` — lazy-loaded WebGL system-map enhancement
-- `vendor/` — pinned Three.js 0.185.1 runtime files and licence
+- `index.html` — semantic portfolio content and assignment section structure
+- `styles.css` — navy/amber visual system, responsive editorial layout, reduced-motion handling and print/PDF styles
+- `script.js` — mobile navigation, active section highlighting and print preparation
 - `assets/` — CV, headshot and talk evidence images
 
-The atlas is progressive enhancement. Content remains semantic and readable if JavaScript or WebGL is unavailable, and reduced-motion users receive a static experience.
+The page is readable with JavaScript disabled. Interactive behaviour is progressive enhancement rather than a requirement for accessing content.
 
 ## Keyboard navigation
 
 - `Tab` moves through links and controls with visible focus indicators
-- `Ctrl+K` or `Cmd+K` opens command navigation
-- `Escape` closes the command menu or mobile navigation
-- The module rail and atlas index are real anchor links, not canvas-only controls
+- `Escape` closes the mobile navigation
+- Section navigation uses ordinary anchor links
+- The skip link is the first tab stop
 
 ## Before submission
 
@@ -52,10 +50,11 @@ Before final submission, check:
 - desktop and mobile rendering
 - no horizontal overflow at 320px
 - keyboard-only navigation and visible focus states
-- command menu open, filter, close and focus restoration
+- mobile menu open, close and focus restoration
 - reduced-motion rendering
 - colour contrast on rendered surfaces
-- no browser console errors
+- no browser console errors or failed asset requests
+- no-JavaScript readability
 - print/PDF output
 
 ## Deployment
