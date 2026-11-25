@@ -362,39 +362,15 @@ a {
   backdrop-filter: blur(20px);
 }
 
-.portrait-placeholder {
-  display: grid;
-  min-height: 21rem;
-  place-items: center;
-  align-content: center;
-  gap: 0.7rem;
-  padding: 2rem;
-  border: 1px dashed rgb(255 255 255 / 0.55);
+.profile-photo {
+  display: block;
+  width: calc(100% - 2rem);
+  aspect-ratio: 1;
   margin: 1rem;
   border-radius: calc(var(--radius-lg) - 1rem);
-  text-align: center;
-}
-
-.portrait-placeholder > span {
-  display: grid;
-  width: 6.5rem;
-  height: 6.5rem;
-  place-items: center;
-  border-radius: 50%;
-  background: rgb(255 255 255 / 0.16);
-  font-family: var(--font-display);
-  font-size: 2.8rem;
-  font-weight: 700;
-}
-
-.portrait-placeholder strong,
-.portrait-placeholder small {
-  max-width: 18rem;
-}
-
-.portrait-placeholder small {
-  color: #d9eef7;
-  line-height: 1.5;
+  object-fit: cover;
+  outline: 1px solid rgb(255 255 255 / 0.22);
+  outline-offset: -1px;
 }
 
 .quick-facts {
@@ -907,9 +883,6 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .portrait-placeholder {
-    min-height: 17rem;
-  }
 
   .footer-grid {
     align-items: flex-start;
@@ -1002,8 +975,7 @@ a {
   .hero-intro,
   .eyebrow,
   .quick-facts dd,
-  .quick-facts dt,
-  .portrait-placeholder small {
+  .quick-facts dt {
     color: #333333;
   }
 
