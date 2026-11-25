@@ -1,6 +1,6 @@
 # Hubert Kozlowski — Professional Portfolio
 
-Static portfolio website for the Immersive Software Engineering Careers Lab assignment. The design is a wider editorial interpretation of Hubert's personal site: restrained navy surfaces, amber accents, precise typography, evidence-led reflection layouts and a print-friendly archive mode.
+Static portfolio website for the Immersive Software Engineering Careers Lab assignment. The design is a wider editorial interpretation of Hubert's personal site: a system light/dark theme, amber accents, system typography, evidence-led reflection layouts and a print-friendly archive mode.
 
 ## Run locally
 
@@ -16,7 +16,7 @@ Open `http://localhost:8000`.
 No framework or build step is required.
 
 - `index.html` — semantic portfolio content and assignment section structure
-- `styles.css` — navy/amber visual system, responsive editorial layout, reduced-motion handling and print/PDF styles
+- `styles.css` — adaptive light/dark visual system, responsive editorial layout, reduced-motion handling and print/PDF styles
 - `script.js` — mobile navigation, active section highlighting and print preparation
 - `assets/` — CV, headshot and talk evidence images
 
