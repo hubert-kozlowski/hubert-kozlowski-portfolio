@@ -16,7 +16,7 @@ Open `http://localhost:8000`.
 The current site is a strong structured draft, but it is **not submission-ready** until the personal evidence below is added. Do not leave placeholder text in the final version.
 
 1. Add your student ID in the plagiarism declaration.
-2. Add your notes for **George F. Dierberger’s talk** in **What I learned from others**, then review the three drafted talk reflections for accuracy.
+2. Review the drafted talk reflections for accuracy. Either add notes for **George F. Dierberger’s talk** or remove that incomplete evidence card before submission.
 3. Write the **Career Connect** reflection from your real experience.
 4. Add completion evidence for the **Library Skills Programme**.
 5. Add completion evidence for the **Assignment Toolkit**.

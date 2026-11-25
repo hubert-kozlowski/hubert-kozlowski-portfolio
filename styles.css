@@ -582,6 +582,26 @@ a {
   font-size: 1.24rem;
 }
 
+.evidence-figure {
+  margin: 1rem 0 0;
+}
+
+.evidence-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  outline: 1px solid rgb(0 0 0 / 0.1);
+  outline-offset: -1px;
+}
+
+.evidence-figure figcaption {
+  margin-block-start: 0.45rem;
+  color: var(--color-text-subtle);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
 .reflection-card.incomplete,
 .timeline-item.incomplete .timeline-content {
   border-style: dashed;
