@@ -33,15 +33,13 @@ The page is readable with JavaScript disabled. Interactive behaviour is progress
 
 The current site is a strong structured draft, but it is **not submission-ready** until the personal evidence below is added. Do not leave placeholder text in the final version.
 
-1. Add your student ID in the plagiarism declaration.
-2. Review the drafted talk reflections for accuracy. Either add notes for **George F. Dierberger’s talk** or remove that incomplete evidence card before submission.
-3. Write the **Career Connect** reflection from your real experience.
-4. Add completion evidence for the **Library Skills Programme**.
-5. Add completion evidence for the **Assignment Toolkit**.
-6. Review every reflective section so the writing is accurate, specific and in your own voice.
-7. Update the AI declaration so it accurately reflects the tools and prompts you used. Keep records of prompts and responses for the academic year.
-8. Add evidence images or screenshots only where they support the reflection and you have permission to use them.
-9. Print or save the site as a PDF and check that the archive copy is readable.
+1. Review the drafted talk reflections for accuracy. Either add notes for **George F. Dierberger’s talk** or remove that incomplete evidence card before submission.
+2. Write the **Career Connect** reflection from your real experience.
+3. Add completion evidence for the **Library Skills Programme**.
+4. Add completion evidence for the **Assignment Toolkit**.
+5. Review every reflective section so the writing is accurate, specific and in your own voice.
+6. Add evidence images or screenshots only where they support the reflection and you have permission to use them.
+7. Print or save the site as a PDF and check that the archive copy is readable.
 
 ## Verification checklist
 
